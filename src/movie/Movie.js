@@ -21,7 +21,7 @@ const Movie = () => {
       .then((res) =>
         setMovies(
           res.results.map((movie) => {
-            return { rank: no.current++, id: movie.id, popularity: movie.popularity, overview: movie.overview, title: movie.title, poster: movie.poster_path, date: movie.release_date, rating: movie.vote_average };
+            return { rank: no.current++, id: movie.id, done: false, popularity: movie.popularity, overview: movie.overview, title: movie.title, poster: movie.poster_path, date: movie.release_date, rating: movie.vote_average };
           })
         )
       );
@@ -57,11 +57,19 @@ const Movie = () => {
     setIsActive(false);
   };
 
+  const onLike = (id) => {
+    setMovies(
+      movies.map((movie) => {
+        return movie.id === id ? { ...movie, done: !movie.done, popularity: movie.done ? movie.popularity - 1 : movie.popularity + 1 } : movie;
+      })
+    );
+  };
+
   return (
     <div className="Movie">
       <h2> Popular Top Movies / {getdate()}</h2>;
       <MovieForm onSearch={onSearch} />
-      <MovieList movies={movies} onOpen={onOpen} />
+      <MovieList movies={movies} onOpen={onOpen} onLike={onLike} />
       {isActive && <Modal onClose={onClose} movie={movie} />}
     </div>
   );

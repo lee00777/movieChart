@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import { FcLikePlaceholder, FcLike } from "react-icons/fc";
-import { FiVideo, FiChevronDown, FiChevronUp, FiMoreHorizontal } from "react-icons/fi";
+import { FiVideo } from "react-icons/fi";
 
-const MovieItem = ({ movie, onOpen }) => {
-  const { rank, id, overview, title, poster, date, popularity, rating } = movie;
+const MovieItem = ({ movie, onOpen, onLike }) => {
+  const { rank, id, overview, title, poster, date, done, popularity, rating } = movie;
 
   //video
   //    fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}&language=en-US`) // key값이 유투브 뒤에...
@@ -21,11 +21,10 @@ const MovieItem = ({ movie, onOpen }) => {
 
       <td>{rating}</td>
       <td className="like">
-        {/* <i onClick={() => onLike(id)}>{done ? <FcLike /> : <FcLikePlaceholder />}</i>
-      {like} */}
-        {/* <i onClick={() => onLike(id)}>{done ? <FcLike /> : <FcLikePlaceholder />}</i>
-      {like} */}
+        <i onClick={() => onLike(id)}>{done ? <FcLike /> : <FcLikePlaceholder />}</i>
         {Math.floor(popularity)}
+
+        {/* {Math.floor(popularity)} */}
       </td>
       <td>
         <i onClick={() => onOpen(id)}>

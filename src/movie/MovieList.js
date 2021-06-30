@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./MovieList.css";
 import MovieItem from "./MovieItem";
 
-const MovieList = ({ movies, onOpen }) => {
+const MovieList = ({ movies, onOpen, onLike }) => {
   return (
     <div className="MovieList">
       <table>
@@ -26,7 +26,7 @@ const MovieList = ({ movies, onOpen }) => {
         </thead>
         <tbody>
           {movies.map((movie) => {
-            return <MovieItem key={movie.id} movie={movie} onOpen={onOpen} />;
+            return <MovieItem key={movie.id} movie={movie} onOpen={onOpen} onLike={onLike} />;
           })}
         </tbody>
       </table>
