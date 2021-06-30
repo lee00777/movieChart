@@ -1,0 +1,8 @@
+.Movie {
+  width: 1200px;
+  margin: auto;
+}
+.Movie h2 {
+  padding: 20px 0;
+  font-size: 16px;
+}

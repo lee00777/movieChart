@@ -1,0 +1,66 @@
+.MovieList {
+}
+.MovieList table {
+  width: 100%;
+}
+.MovieList table .w1 {
+  width: 7%;
+}
+.MovieList table .w2 {
+}
+.MovieList table .w3 {
+  width: 25%;
+}
+.MovieList table .w4 {
+  width: 10%;
+}
+.MovieList table .w5 {
+  width: 10%;
+}
+.MovieList table .w6 {
+  width: 10%;
+}
+.MovieList table th,
+.MovieList table td {
+  border-bottom: 1px solid #dcdcdc;
+  vertical-align: middle;
+  text-align: center;
+}
+.MovieList table thead tr th {
+  border-top: 1px solid #000;
+  height: 50px;
+}
+.MovieList table tbody tr td {
+  padding: 5px;
+}
+.MovieList table tbody tr td:nth-child(2) {
+  text-align: left;
+}
+.MovieList table tbody tr td:nth-child(3) {
+  text-align: left;
+}
+.MovieList table tbody tr:last-child td {
+  border-bottom: 1px solid #000;
+}
+.MovieList table tbody tr td img {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.MovieList table tbody tr td i {
+  font-size: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.MovieList table tbody tr td.like i {
+  margin-right: 5px;
+}
+.MovieList table tbody tr td.img {
+  display: flex;
+}
+.MovieList table tbody tr td.img p {
+  padding-top: 5px;
+}
+.MovieList table tbody tr td.img p span {
+  display: block;
+  color: #000;
+}
