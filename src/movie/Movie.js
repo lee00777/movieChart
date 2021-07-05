@@ -15,17 +15,9 @@ const Movie = () => {
 
   const getData = async () => {
     const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
-    // axios.get(url).then((res) => {
-    //   setMovies(
-    //     res.data.results.map((movie) => {
-    //       console.log("zero");
-    //       return { rank: no.current++, id: movie.id, done: false, popularity: movie.popularity, overview: movie.overview, title: movie.title, poster: movie.poster_path, date: movie.release_date, rating: movie.vote_average };
-    //     })
-    //   );
-    // });
-
     const res = await fetch(url);
     const jsonData = await res.json();
+    console.log(jsonData);
     const movieData = await jsonData.results.map((movie) => {
       return { rank: no.current++, id: movie.id, done: false, popularity: movie.popularity, overview: movie.overview, title: movie.title, poster: movie.poster_path, date: movie.release_date, rating: movie.vote_average };
     });
