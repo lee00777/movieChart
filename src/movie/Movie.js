@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
+import axios from "axios";
 import MovieList from "./MovieList";
 import MovieForm from "./MovieForm";
 import Modal from "./Modal";
 import "./Movie.css";
 
 const Movie = () => {
+  const [data, setData] = useState([]);
   const [movies, setMovies] = useState([]);
   const [apiKey, setApiKkey] = useState("951e82f5d79e2739c92002427a43ca93");
   const [isActive, setIsActive] = useState(false);
@@ -16,19 +18,22 @@ const Movie = () => {
   }, []);
 
   const getData = () => {
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`)
-      .then((res) => res.json())
-      .then((res) =>
-        setMovies(
-          res.results.map((movie) => {
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
+    axios
+      .get(url)
+      .then((res) => {
+        setData(
+          res.data.results.map((movie) => {
             return { rank: no.current++, id: movie.id, done: false, popularity: movie.popularity, overview: movie.overview, title: movie.title, poster: movie.poster_path, date: movie.release_date, rating: movie.vote_average };
           })
-        )
-      );
+        );
+      })
+      .then(setMovies(data));
   };
 
   const onSearch = (text) => {
-    const newData = movies.filter((movie) => {
+    console.log("movie : ", movie);
+    const newData = data.filter((movie) => {
       const re = new RegExp(text, "ig");
       return movie.title.match(re);
     });
