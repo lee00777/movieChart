@@ -13,26 +13,31 @@ const Movie = () => {
   const [movie, setMovie] = useState({});
   const no = useRef(1);
 
+  const getData = async () => {
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
+    // axios.get(url).then((res) => {
+    //   setMovies(
+    //     res.data.results.map((movie) => {
+    //       console.log("zero");
+    //       return { rank: no.current++, id: movie.id, done: false, popularity: movie.popularity, overview: movie.overview, title: movie.title, poster: movie.poster_path, date: movie.release_date, rating: movie.vote_average };
+    //     })
+    //   );
+    // });
+
+    const res = await fetch(url);
+    const jsonData = await res.json();
+    const movieData = await jsonData.results.map((movie) => {
+      return { rank: no.current++, id: movie.id, done: false, popularity: movie.popularity, overview: movie.overview, title: movie.title, poster: movie.poster_path, date: movie.release_date, rating: movie.vote_average };
+    });
+    setData(movieData);
+    setMovies(movieData);
+  };
+
   useEffect(() => {
     getData();
   }, []);
 
-  const getData = () => {
-    const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
-    axios
-      .get(url)
-      .then((res) => {
-        setData(
-          res.data.results.map((movie) => {
-            return { rank: no.current++, id: movie.id, done: false, popularity: movie.popularity, overview: movie.overview, title: movie.title, poster: movie.poster_path, date: movie.release_date, rating: movie.vote_average };
-          })
-        );
-      })
-      .then(setMovies(data));
-  };
-
   const onSearch = (text) => {
-    console.log("movie : ", movie);
     const newData = data.filter((movie) => {
       const re = new RegExp(text, "ig");
       return movie.title.match(re);
