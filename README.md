@@ -3,8 +3,8 @@ This is a website built with React (Function components), using The Movie Databa
 
 Users can check a list of the current popular movies on TMDB. This list updates daily.
 
-## To start with
-Type below commands 
+## To start with 
+Please type following command in order:
 - npm install
 - npm start
 
