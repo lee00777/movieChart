@@ -20,7 +20,7 @@ const MovieForm = ({ onSearch }) => {
 
   return (
     <form className="MovieForm" onSubmit={onSubmit}>
-      <input type="text" value={text} onChange={changeInput} />
+      <input type="text" placeholder="Search" value={text} onChange={changeInput} style={{width:'80%', paddingTop:'2rem'}} />
     </form>
   );
 };

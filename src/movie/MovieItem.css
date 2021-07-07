@@ -1,10 +1,3 @@
-/* .movieCard{
-  border-radius:0.5rem;
-  background-color:#CF6679;
-  height:50vh;
-  margin-bottom:2rem;
-} */
-
 .card {
   display: grid;
   grid-template-columns: 100%;
@@ -25,19 +18,15 @@
 .card-stats {
   grid-area: stats; 
 }
-
 .card-image {
   grid-area: image;
-  /* background: url("img1.jpg"); */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  /* background-size: cover; */
   width:100%;
   height:100%;
 }
 .card-text {
   grid-area: text;
-  /* margin: 25px; */
 }
 .card-text h2{
   text-align:left;
@@ -58,7 +47,6 @@
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  /* background: rgb(255, 7, 110); */
   background:grey;
 }
 .card-stats .stat {
@@ -67,13 +55,12 @@
   justify-content: center;
   flex-direction: column;
   color: white;
-  padding:10px;
+  padding:3px;
 }
 .card-stats .value p {
  font-size:1.4rem;
  color:white;
 }
-
 .card:hover {
   transform: scale(1.15);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);

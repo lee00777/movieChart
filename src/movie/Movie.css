@@ -3,13 +3,13 @@
   margin: auto;
 }
 .Movie h1{
-  color:white;
-  font-size:2rem;
+  color:#4db6ac;
+  font-size:2.5rem;
   margin-left:3rem;
   padding-top:3rem;
 }
 .Movie h2 {
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 1.7em;
   color:white;
 }

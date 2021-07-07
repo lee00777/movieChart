@@ -76,7 +76,6 @@ const Movie = () => {
         {isActive && <Modal onClose={onClose} movie={movie} />}
       </div>
     </div>
-    
   );
 };
 

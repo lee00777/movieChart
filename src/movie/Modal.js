@@ -21,14 +21,12 @@ const Modal = ({ onClose, movie }) => {
     <div className="Modal">
       <div className="bg"></div>
       <div className="popup">
-        <h2>Title : {title}</h2>
         <div>
           <iframe width="813" height="457" src={`https://www.youtube.com/embed/${videoKey}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <p>{rating}</p>
         <span>
           <i onClick={onClose}>
-            <AiOutlineCloseCircle />
+            <AiOutlineCloseCircle style={{color:"white"}} />
           </i>
         </span>
       </div>
