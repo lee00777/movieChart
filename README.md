@@ -1,5 +1,5 @@
 # Check Top 20 movies every day! 🎬
-This is a website built with React (Function components), using The Movie Database (TMDB) API.
+This is a website built with React (Functional components), using The Movie Database (TMDB) API.
 
 Users can check a list of the current popular movies on TMDB. This list updates daily.
 
