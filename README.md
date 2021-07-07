@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Check Top 20 movies every day! 🎬
+This is a website built with React (Function components), using The Movie Database (TMDB) API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Users can check a list of the current popular movies on TMDB. This list updates daily.
 
-## Available Scripts
+## To start with
+Type below commands 
+- npm install
+- npm start
 
-In the project directory, you can run:
+## How to use
 
-### `yarn start`
+### - Users can check a list of the current popula movies on the website
+<img width="1217" alt="Screen Shot 2021-07-07 at 4 19 30 PM" src="https://user-images.githubusercontent.com/72294886/124717542-311fca00-df40-11eb-9bc7-c3e8f661e750.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### - Users can search a specific movie, using a search bar
+<img width="1088" alt="Screen Shot 2021-07-07 at 4 19 54 PM" src="https://user-images.githubusercontent.com/72294886/124717624-44cb3080-df40-11eb-92c1-79c42ed3628f.png">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### - Users can use a "like" button, to show their favorite 
+<img width="1231" alt="Screen Shot 2021-07-07 at 4 20 13 PM" src="https://user-images.githubusercontent.com/72294886/124717679-54e31000-df40-11eb-80cd-e265c2f28a54.png">
 
-### `yarn test`
+### - Users can click a "video" button, to watch a trailer
+<img width="1154" alt="Screen Shot 2021-07-07 at 4 21 01 PM" src="https://user-images.githubusercontent.com/72294886/124720307-fb301500-df42-11eb-98d1-e76875f65f21.png">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
