@@ -68,12 +68,15 @@ const Movie = () => {
   };
 
   return (
-    <div className="Movie">
-      <h2> Popular Top Movies / {getdate()}</h2>;
-      <MovieForm onSearch={onSearch} />
-      <MovieList movies={movies} onOpen={onOpen} onLike={onLike} />
-      {isActive && <Modal onClose={onClose} movie={movie} />}
+    <div className="Movie container" >
+      <div className="row">
+        <h1> Popular Top Movies / {getdate()}</h1>;
+        <MovieForm onSearch={onSearch} />
+        <MovieList movies={movies} onOpen={onOpen} onLike={onLike} />
+        {isActive && <Modal onClose={onClose} movie={movie} />}
+      </div>
     </div>
+    
   );
 };
 

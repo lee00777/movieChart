@@ -5,7 +5,7 @@ import MovieItem from "./MovieItem";
 const MovieList = ({ movies, onOpen, onLike }) => {
   return (
     <div className="MovieList">
-      <table>
+      {/* <table>
         <colgroup>
           <col className="w1" />
           <col className="w2" />
@@ -23,13 +23,13 @@ const MovieList = ({ movies, onOpen, onLike }) => {
             <th>Likes</th>
             <th>Video</th>
           </tr>
-        </thead>
-        <tbody>
+        </thead> */}
+        {/* <tbody> */}
           {movies.map((movie) => {
             return <MovieItem key={movie.id} movie={movie} onOpen={onOpen} onLike={onLike} />;
           })}
-        </tbody>
-      </table>
+        {/* </tbody> */}
+      {/* </table> */}
     </div>
   );
 };

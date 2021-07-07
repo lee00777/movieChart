@@ -1,0 +1,85 @@
+/* .movieCard{
+  border-radius:0.5rem;
+  background-color:#CF6679;
+  height:50vh;
+  margin-bottom:2rem;
+} */
+
+.card {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 350px 120px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: #242526;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+}
+.card-image {
+  grid-area: image;
+}
+.card-text {
+  grid-area: text;
+}
+.card-stats {
+  grid-area: stats; 
+}
+
+.card-image {
+  grid-area: image;
+  /* background: url("img1.jpg"); */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /* background-size: cover; */
+  width:100%;
+  height:100%;
+}
+.card-text {
+  grid-area: text;
+  /* margin: 25px; */
+}
+.card-text h2{
+  text-align:left;
+  margin:0 10px;
+  font-size:1.4rem;
+}
+.card-text p {
+  text-align:left;
+  margin:0 10px;
+  color: white;
+  font-size:1.2rem;
+  font-weight: 300;
+}
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* background: rgb(255, 7, 110); */
+  background:grey;
+}
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding:10px;
+}
+.card-stats .value p {
+ font-size:1.4rem;
+ color:white;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}

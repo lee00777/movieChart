@@ -14,7 +14,7 @@ const Modal = ({ onClose, movie }) => {
     const url = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=951e82f5d79e2739c92002427a43ca93&language=en-US&page=1`;
     const res = await fetch(url);
     const jsonData = await res.json();
-    setVideoKey(jsonData.results[1].key);
+    setVideoKey(jsonData.results[0].key);
   };
 
   return (

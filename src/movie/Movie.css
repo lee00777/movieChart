@@ -1,8 +1,15 @@
 .Movie {
-  width: 1200px;
+  width: 90vw;
   margin: auto;
 }
+.Movie h1{
+  color:white;
+  font-size:2rem;
+  margin-left:3rem;
+  padding-top:3rem;
+}
 .Movie h2 {
-  padding: 20px 0;
-  font-size: 16px;
+  padding: 10px 0;
+  font-size: 1.7em;
+  color:white;
 }
