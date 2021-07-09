@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import axios from "axios";
 import MovieList from "./MovieList";
 import MovieForm from "./MovieForm";
 import Modal from "./Modal";
@@ -37,15 +36,6 @@ const Movie = () => {
     setMovies(newData);
   };
 
-  const getdate = () => {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = now.getMonth() + 1;
-    const date = now.getDate();
-    const msg = `${year}.${month}.${date}`;
-    return msg;
-  };
-
   const onOpen = (id) => {
     setIsActive(true);
     setMovie(
@@ -68,9 +58,8 @@ const Movie = () => {
   };
 
   return (
-    <div className="Movie container" >
+    <div className="Movie container">
       <div className="row">
-        <h1> Popular Top Movies / {getdate()}</h1>;
         <MovieForm onSearch={onSearch} />
         <MovieList movies={movies} onOpen={onOpen} onLike={onLike} />
         {isActive && <Modal onClose={onClose} movie={movie} />}

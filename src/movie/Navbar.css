@@ -1,0 +1,35 @@
+/* .Movie {
+  width: 90vw;
+  margin: auto;
+} */
+
+.nav h1 {
+  color: whitesmoke;
+  font-size: 2.8rem;
+  margin-left: 3rem;
+  padding-top: 3rem;
+  font-weight: 500;
+}
+.nav h2 {
+  padding: 15px 0;
+  font-size: 1.7em;
+  color: white;
+}
+
+.nav {
+  padding-top: 4rem;
+  width: 70vw;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+.nav ul {
+  text-align: right;
+}
+
+.nav ul li {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.nav ul li :hover {
+  color: rgb(52, 225, 173);
+}
