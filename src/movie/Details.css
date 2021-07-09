@@ -1,0 +1,37 @@
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+}
+.genres {
+  font-size: 1.3rem;
+  color: green;
+}
+.date,
+.runtime {
+  display: inline;
+}
+.date {
+  font-size: 1.5rem;
+}
+.runtime {
+  font-size: 1.2rem;
+}
+.overview {
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.rating {
+  font-size: 1.3rem;
+}
+
+.production,
+.website {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+}
+.language {
+  padding-top: 5rem;
+  font-size: 1.3rem;
+}

@@ -2,21 +2,24 @@ import React, { useRef, useState } from "react";
 import "./MovieItem.css";
 import { FcLikePlaceholder, FcLike } from "react-icons/fc";
 import { FiVideo } from "react-icons/fi";
-import { Card } from "materialize-css";
 import Numeral from "numeral";
+import { Link } from "react-router-dom";
 
 const MovieItem = ({ movie, onOpen, onLike }) => {
   const { rank, id, overview, title, poster, date, done, popularity, rating } = movie;
   return (
     <div className="col s12 m6 l3 ">
-      <div className="card">
-        <img className="card-image" src={`https://image.tmdb.org/t/p/w200/${poster}`} alt="a poster" />
-        <div className="card-text">
-          <h2>{title}</h2>
-          <p>Release Date : {date}</p>
-          <p>Rating : {rating}</p>
-        </div>
-        <div className="card-stats">
+      <div className="cards">
+        <Link to={`/details/${id}`}>
+          <img className="cards-image" src={`https://image.tmdb.org/t/p/w200/${poster}`} alt="a poster" />
+          <div className="cards-text">
+            <h2>{title}</h2>
+            <p>Release Date : {date}</p>
+            <p>Rating : {rating}</p>
+          </div>
+        </Link>
+
+        <div className="cards-stats">
           <div className="stat">
             <div className="value">
               <p>{rank}</p>

@@ -7,7 +7,7 @@ import "./Movie.css";
 const Movie = () => {
   const [data, setData] = useState([]);
   const [movies, setMovies] = useState([]);
-  const [apiKey, setApiKkey] = useState("951e82f5d79e2739c92002427a43ca93");
+  const [apiKey, setApiKey] = useState("951e82f5d79e2739c92002427a43ca93");
   const [isActive, setIsActive] = useState(false);
   const [movie, setMovie] = useState({});
   const no = useRef(1);

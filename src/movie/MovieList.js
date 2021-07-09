@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import MovieItem from "./MovieItem";
 
-const MovieList = ({ movies, onOpen, onLike }) => {
+const MovieList = ({ movies, onOpen, onLike, onDetail }) => {
   return (
     <div className="MovieList">
-          {movies.map((movie) => {
-            return <MovieItem key={movie.id} movie={movie} onOpen={onOpen} onLike={onLike} />;
-          })}
+      {movies.map((movie) => {
+        return <MovieItem key={movie.id} movie={movie} onOpen={onOpen} onLike={onLike} />;
+      })}
     </div>
   );
 };

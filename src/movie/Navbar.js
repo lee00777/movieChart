@@ -14,16 +14,15 @@ const Navbar = () => {
 
   return (
     <div className="nav row">
-      <h1 className="col s8 m8 l8">
-        {" "}
-        <Link to="/">Popular Top Movies / {getdate()}</Link>
+      <h1 className="col s7 m8 l6">
+        <Link to="/">WHAT'S POPULAR</Link>
       </h1>
       <ul>
         <li className="col s2 m2 l2">
-          <Link to="/about">About Us </Link>
+          <Link to="/upcoming">Upcoming </Link>
         </li>
-        <li className="col s2 m2 l2">
-          <Link to="/contact">Contact Us </Link>{" "}
+        <li className="col s3 m2 l2">
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </div>

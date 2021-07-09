@@ -1,10 +1,11 @@
 import Movie from "./movie/Movie";
 import Contact from "./contact/Contact";
-import About from "./about/About";
 import "./utils/css/reset.css";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./movie/Navbar";
+import Upcoming from "./upcoming/Upcoming";
+import Details from "./movie/Details";
 
 function App() {
   return (
@@ -17,8 +18,12 @@ function App() {
             <Movie />
           </Route>
 
-          <Route path="/about">
-            <About />
+          <Route path="/details/:id">
+            <Details />
+          </Route>
+
+          <Route path="/upcoming">
+            <Upcoming />
           </Route>
 
           <Route path="/contact">
