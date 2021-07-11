@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MovieItem from "./MovieItem";
 
-const MovieList = ({ movies, onOpen, onLike, onDetail }) => {
+const MovieList = ({ movies, onOpen, onLike }) => {
   return (
     <div className="MovieList">
       {movies.map((movie) => {

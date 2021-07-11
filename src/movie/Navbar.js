@@ -22,7 +22,7 @@ const Navbar = () => {
 
       <ul>
         <li className="col s2 m2 l2">
-          <Link to="/upcoming">Upcoming </Link>
+          <Link to="/topmovies">Top Rated </Link>
         </li>
         <li className="col s3 m2 l2">
           <Link to="/contact">Contact</Link>

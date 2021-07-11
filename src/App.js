@@ -4,8 +4,9 @@ import "./utils/css/reset.css";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./movie/Navbar";
-import Upcoming from "./upcoming/Upcoming";
+import TopMovies from "./topmovies/TopMovies";
 import Details from "./movie/Details";
+import TopMoviesDetails from "./topmovies/TopMoviesDetails";
 
 function App() {
   return (
@@ -22,9 +23,13 @@ function App() {
             <Details />
           </Route>
 
-          <Route path="/upcoming">
-            <Upcoming />
+          <Route path="/topmovies">
+            <TopMovies />
           </Route>
+          {/* 
+          <Route path="/topmovies/details/:id">
+            <TopMoviesDetails />
+          </Route> */}
 
           <Route path="/contact">
             <Contact />
