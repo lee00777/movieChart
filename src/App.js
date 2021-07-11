@@ -26,10 +26,10 @@ function App() {
           <Route path="/topmovies">
             <TopMovies />
           </Route>
-          {/* 
-          <Route path="/topmovies/details/:id">
+
+          <Route path="/topdetails/:id">
             <TopMoviesDetails />
-          </Route> */}
+          </Route>
 
           <Route path="/contact">
             <Contact />

@@ -4,8 +4,6 @@ import MovieForm from "../movie/MovieForm";
 import "../movie/Movie.css";
 import TopMoviesList from "./TopMoviesList";
 import Modal from "./Modal";
-import { Route, Switch } from "react-router-dom";
-import TopMoviesDetails from "./TopMoviesDetails";
 
 const Upcoming = () => {
   const [data, setData] = useState([]);
@@ -72,11 +70,6 @@ const Upcoming = () => {
 
   return (
     <div className="Movie container">
-      {
-        <Route path="/topmovies/details/:id">
-          <TopMoviesDetails />
-        </Route>
-      }
       <div className="row">
         <MovieForm onSearch={onSearch} />
         <TopMoviesList movies={movies} onOpen={onOpen} onLike={onLike} />

@@ -1,7 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
 import TopMoviesItem from "./TopMoviesItem";
-import TopMoviesDetails from "./TopMoviesDetails";
 
 const TopMoviesList = ({ movies, onOpen, onLike }) => {
   return (

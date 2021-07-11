@@ -3,15 +3,14 @@ import "../movie/MovieItem.css";
 import { FcLikePlaceholder, FcLike } from "react-icons/fc";
 import { FiVideo } from "react-icons/fi";
 import Numeral from "numeral";
-import { Link, Route } from "react-router-dom";
-import TopMoviesDetails from "./TopMoviesDetails";
+import { Link } from "react-router-dom";
 
 const TopMoviesItem = ({ movie, onOpen, onLike }) => {
   const { rank, id, overview, title, poster, date, done, popularity, rating } = movie;
   return (
     <div className="col s12 m6 l3 ">
       <div className="cards">
-        <Link to={`/topmovies/details/${id}`}>
+        <Link to={`/topdetails/${id}`}>
           <img className="cards-image" src={`https://image.tmdb.org/t/p/w200/${poster}`} alt="a poster" />
           <div className="cards-text">
             <h2>{title}</h2>
