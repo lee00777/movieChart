@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "../movie/MovieItem.css";
 import { FcLikePlaceholder, FcLike } from "react-icons/fc";
 import { FiVideo } from "react-icons/fi";
@@ -6,7 +6,7 @@ import Numeral from "numeral";
 import { Link } from "react-router-dom";
 
 const TopMoviesItem = ({ movie, onOpen, onLike }) => {
-  const { rank, id, overview, title, poster, date, done, popularity, rating } = movie;
+  const { rank, id, title, poster, date, done, popularity, rating } = movie;
   return (
     <div className="col s12 m6 l3 ">
       <div className="cards">

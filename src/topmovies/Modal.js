@@ -3,7 +3,7 @@ import "../movie/Modal.css";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Modal = ({ onClose, movie }) => {
-  const { rank, id, overview, title, poster, date, popularity, rating } = movie;
+  const { id } = movie;
   const [videoKey, setVideoKey] = useState("");
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Modal = ({ onClose, movie }) => {
       <div className="bg"></div>
       <div className="popup">
         <div>
-          <iframe width="813" height="457" src={`https://www.youtube.com/embed/${videoKey}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="813" height="457" src={`https://www.youtube.com/embed/${videoKey}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
         <span>
           <i onClick={onClose}>

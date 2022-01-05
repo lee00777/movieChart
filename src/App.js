@@ -2,7 +2,7 @@ import Movie from "./movie/Movie";
 import Contact from "./contact/Contact";
 import "./utils/css/reset.css";
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./movie/Navbar";
 import TopMovies from "./topmovies/TopMovies";
 import Details from "./movie/Details";

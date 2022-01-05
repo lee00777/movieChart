@@ -35,3 +35,21 @@
   padding-top: 5rem;
   font-size: 1.3rem;
 }
+
+@media only screen and (min-width: 20em) {
+  .parent {
+    min-width: 90%;
+  }
+  .detail {
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .parent {
+    min-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+}

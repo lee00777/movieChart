@@ -14,19 +14,19 @@ const Navbar = () => {
 
   return (
     <div className="nav row">
-      <h1 className="col s7 m8 l6">
+      <h1>
         <Link to="/">
           WHAT'S POPULAR <span style={{ fontSize: "1.5rem", color: "grey" }}> | {getdate()} </span>
         </Link>
       </h1>
 
       <ul>
-        <li className="col s2 m2 l2">
+        <li>
           <Link to="/topmovies">Top Rated </Link>
         </li>
-        <li className="col s3 m2 l2">
+        {/* <li className="col s3 m2 l2">
           <Link to="/contact">Contact</Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

@@ -7,7 +7,7 @@ import { FaLink } from "react-icons/fa";
 const Details = () => {
   const { id } = useParams();
   const [detail, setDetail] = useState([]);
-  const [apiKey, setApiKey] = useState("951e82f5d79e2739c92002427a43ca93");
+  const apiKey = "951e82f5d79e2739c92002427a43ca93";
   const getData = async () => {
     const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US&page=1`;
     const res = await fetch(url);

@@ -10,7 +10,7 @@
 .Modal .popup {
   border-radius: 15px;
   position: fixed;
-  width: 600px;
+  width: 70%;
   height: 500px;
   left: 50%;
   top: 50%;
@@ -20,7 +20,6 @@
 }
 .Modal .popup h2 {
   font-size: 25px;
-
 }
 .Modal .popup div {
   width: 100%;
@@ -28,7 +27,7 @@
   overflow: hidden;
 }
 .Modal .popup iframe {
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
   width: 100%;
   height: 450px;
 }
@@ -43,4 +42,12 @@
 }
 .Modal .popup span i {
   font-size: 35px;
+}
+@media only screen and (min-width: 38em) {
+}
+
+@media only screen and (min-width: 60em) {
+}
+
+@media only screen and (min-width: 90em) {
 }
